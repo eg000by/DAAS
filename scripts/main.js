@@ -19,5 +19,3 @@ function prevSlide() {
 document.querySelector('.next').addEventListener('click', nextSlide);
 document.querySelector('.prev').addEventListener('click', prevSlide);
 
-// Автоматическое переключение слайдов (необязательно)
-// setInterval(nextSlide, 5000); // Смена каждые 5 секунд

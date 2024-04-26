@@ -25,7 +25,8 @@
     align-items: center;
     padding: 20px;
     color: #fff;
-    position: relative;
+    position: absolute;
+    width: 100%;
     z-index: 1;
 }
 
@@ -76,18 +77,12 @@
 
 
 .slider-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    height: 100vh;
     width: 100%;
-    background-size: cover;
-    background-position: center;
 }
 
 .background-slider {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .slide {
@@ -100,7 +95,6 @@
     background-position: center;
     opacity: 0;
     transition: opacity 0.5s ease;
-    
 }
 
 .slide.active {
@@ -128,5 +122,43 @@
     align-items: center;
     width: 100%;
 }
+
+.portfolio {
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.portfolio h2 {
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex: 0 0 calc(33.333% - 20px); /* Ширина 33.333% минус отступы */
+    margin-right: 20px; /* Отступ между элементами */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.portfolio-item img {
+    width: 100%; /* Заполнение ширины родительского элемента */
+    height: auto; /* Автоматический расчет высоты */
+    display: block; /* Блочное отображение */
+    border-radius: 8px; /* Закругление углов */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.portfolio-item h3 {
+    font-size: 18px; /* Размер шрифта названия */
+    margin-bottom: 5px; /* Отступ снизу */
+}
+
+.portfolio-item p {
+    font-size: 14px; /* Размер шрифта описания */
+    color: #666; /* Цвет текста описания */
+}
+
 
 
