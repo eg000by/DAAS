@@ -18,6 +18,7 @@
 
 .gilroy-f {
     font-family: 'Gilroy Light';  
+    font-weight: 300;
 }
 .main-header {
     display: flex;
@@ -78,7 +79,8 @@
 
 .slider-container {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 20px); /* тут рixel perfect*/
+    /* height: 100vh; */ /* тут реальная вся высота*/
     width: 100%;
 }
 
@@ -124,41 +126,62 @@
 }
 
 .portfolio {
-    margin-top: 20px; /* Отступ сверху */
+    margin-top: 120px;
+    margin-left: 99px;
+    margin-right: 80px;
+    margin-bottom: 120px;
 }
 
-.portfolio h2 {
-    margin-bottom: 10px; /* Отступ снизу */
+.portfolio h1 {
+    margin-bottom: 50px;
+    font-size: 48px;
+    color: black;
 }
 
 .portfolio-items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-bottom: 50px;
 }
 
 .portfolio-item {
-    flex: 0 0 calc(33.333% - 20px); /* Ширина 33.333% минус отступы */
-    margin-right: 20px; /* Отступ между элементами */
-    margin-bottom: 20px; /* Отступ снизу */
+    flex: 0 0 calc(33.333% - 20px);
 }
 
 .portfolio-item img {
-    width: 100%; /* Заполнение ширины родительского элемента */
-    height: auto; /* Автоматический расчет высоты */
-    display: block; /* Блочное отображение */
-    border-radius: 8px; /* Закругление углов */
-    margin-bottom: 10px; /* Отступ снизу */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
 }
 
-.portfolio-item h3 {
-    font-size: 18px; /* Размер шрифта названия */
-    margin-bottom: 5px; /* Отступ снизу */
+.portfolio-item h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.gray-text {
+    color:grey;
 }
 
 .portfolio-item p {
-    font-size: 14px; /* Размер шрифта описания */
-    color: #666; /* Цвет текста описания */
+    font-size: 20px;
+    color:grey;
 }
+
+.show-more {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 20px;
+    text-underline-offset: 10px;
+}
+
 
 
 
