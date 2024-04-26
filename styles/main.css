@@ -125,14 +125,17 @@
     width: 100%;
 }
 
-.portfolio {
-    margin-top: 120px;
+.content-wrapper {
     margin-left: 99px;
     margin-right: 80px;
+}
+
+.portfolio {
+    margin-top: 120px;
     margin-bottom: 120px;
 }
 
-.portfolio h1 {
+.block-name {
     margin-bottom: 50px;
     font-size: 48px;
     color: black;
@@ -182,6 +185,20 @@
     text-underline-offset: 10px;
 }
 
+.video-items {
+    display: flex;
+}
 
+.video-info {
+    margin-left: 30px;
+    align-self: end;
+    line-height: 26px;
+    font-size: 20px;
+}
+
+.services {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
 
 
