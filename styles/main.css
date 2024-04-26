@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url('../fonts/Gilroy-Light.ttf') format('truetype'),
+    url('../fonts/Gilroy-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.gilroy-f {
+    font-family: 'Gilroy Light';  
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+    left: 83px;
+    top: 6px;
+}
+
+.logo img {
+    width: 92px;
+}
+
+.main-nav {
+    position: relative;
+    left: 40px;
+    top: 3px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 50px; 
+}
+
+.main-nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.language-switch {
+    font-size: 14px;
+    position: relative;
+    font-weight: 400;
+    right: 53px;
+    top: 2px;
+}
+.language-switch a {
+    color: #fff; 
+    text-decoration: none; 
+}
+.background-image {
+    background-image: url('../assets/photo.png'); /* Путь к вашей картинке */
+    background-size: cover; /* Растягиваем картинку на всю ширину и высоту */
+    background-position: center; /* Центрируем картинку */
+    width: 100%; /* Ширина контейнера на всю ширину экрана */
+    height: 100vh; /* Высота контейнера на всю высоту экрана за вычетом высоты вашего заголовка */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
