@@ -201,4 +201,44 @@
     margin-bottom: 120px;
 }
 
+.services-container {
+    display: flex;
+}
+
+.service {
+    flex: 1;
+    width: 408px;
+    height: 331px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service:not(:last-child) {
+    margin-right: 29px;
+}
+
+.service h2 {
+    font-size: 28px;
+    line-height: 40.46px;
+}
+
+.service-info {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 
