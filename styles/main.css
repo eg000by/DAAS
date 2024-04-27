@@ -76,7 +76,6 @@
     text-decoration: none; 
 }
 
-
 .slider-container {
     position: relative;
     height: calc(100vh - 20px); /* тут рixel perfect*/
@@ -180,9 +179,11 @@
     border: none;
     background-color: transparent;
     text-decoration: underline;
+    text-decoration-color: rgba(39, 39, 39, 1);
     cursor: pointer;
     font-size: 20px;
     text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
 }
 
 .video-items {
@@ -215,7 +216,7 @@
     padding-right: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
 
 .service:not(:last-child) {
@@ -225,11 +226,15 @@
 .service h2 {
     font-size: 28px;
     line-height: 40.46px;
+    min-height: 70px;
+    flex: 1;
+    margin-bottom: 30px;
 }
 
 .service-info {
     font-size: 20px;
     line-height: 26px;
+    flex: 1;
 }
 
 .btn {
@@ -241,4 +246,157 @@
     border-radius: 5px;
 }
 
+.services-button {
+    flex: 1;
+    margin-top: 70px;
+    display: block;
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: rgba(39, 39, 39, 1);
+    cursor: pointer;
+    font-size: 20px;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+}
+
+.buro-items {
+    display: flex;
+    gap:30px;
+}
+
+.creators {
+    display: flex;
+    gap: 30px;
+}
+
+.creator img {
+    margin-bottom: 30px;
+}
+
+.creator h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 40.46px;
+}
+
+.creator p {
+    line-height: 26px;
+    font-size: 20px;
+}
+
+.buro-info {
+    line-height: 26px;
+    font-size: 20px;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 116px;
+}
+
+.buro-button {
+    display: block;
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: rgba(39, 39, 39, 1);
+    cursor: pointer;
+    font-size: 16px;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+}
+
+.furniture-block {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.furniture-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 60px;
+    margin-bottom: 50px;
+    line-height: 26px;
+    font-size: 20px;
+}
+
+.furniture-1 {
+    width: 700px;
+}
+
+.furniture-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.furniture-items {
+    display: flex;
+    gap: 30px;
+}
+
+.furniture {
+    flex: 1;
+}
+
+.furn {
+    margin-bottom: 30px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 100px 80px 100px 100px;
+    background-color: black;
+}
+.footer-nav {
+    display: flex;
+}
+
+.footer-logo img{
+    width: 116px;
+}
+
+.footer-nav ul{
+    margin-left: 70px;
+    list-style-type: none;
+    display: flex;
+    gap: 65px;
+}
+
+.footer-nav ul li {
+    margin-right: 20px;
+}
+
+.footer-nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 28px;
+    line-height: 40.46px;
+    text-transform: uppercase;
+}
+
+.social-links {
+    display: flex;
+    gap:17px;
+}
+
+.social-links-always {
+    position: fixed;
+    bottom: 150px;
+    right: 5px; 
+    gap:16px;
+    flex-direction: column;
+    display: none;
+    z-index: 3; 
+}
+
+.social-links-always.show {
+    display: flex;
+}
 

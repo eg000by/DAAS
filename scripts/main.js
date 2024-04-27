@@ -18,3 +18,14 @@ function prevSlide() {
 
 document.querySelector('.next').addEventListener('click', nextSlide);
 document.querySelector('.prev').addEventListener('click', prevSlide);
+
+window.addEventListener('scroll', function() {
+    var footerPosition = document.querySelector('footer').getBoundingClientRect().top;
+    var socialLinks = document.querySelector('.social-links-always');
+    
+    if (footerPosition <= window.innerHeight) {
+        socialLinks.classList.remove('show');
+    } else {
+        socialLinks.classList.add('show');
+    }
+});
