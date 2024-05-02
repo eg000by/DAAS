@@ -129,6 +129,7 @@ body {
 
 .content-wrapper {
     max-width: 1520px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -196,28 +197,38 @@ body {
     display: flex;
 }
 
+.video {
+    max-width: 1000px;
+    flex: 0 0 66%;
+}
+
+.video img {
+    width: 100%;
+}
+
 .video-info {
-    margin-left: 30px;
+    padding-left: 30px;
     align-self: end;
-    line-height: 26px;
-    font-size: 20px;
+    line-height: 24px;
+    font-size: 18px;
 }
 
 .services-container {
+    margin-top: 67px;
     display: flex;
 }
 
 .service {
-    flex: 1;
-    width: 408px;
+    flex: 0 0 25%;
+    max-width: 357px;
     height: 331px;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    padding-left: 30px;
-    padding-right: 30px;
+    border-left: 1px solid rgba(196, 196, 196, 1);
+    border-right: 1px solid rgba(196, 196, 196, 1);
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  
+    
 }
 
 .service:not(:last-child) {
@@ -227,29 +238,20 @@ body {
 .service h2 {
     font-size: 28px;
     line-height: 40.46px;
-    min-height: 70px;
-    flex: 1;
+    min-height: 70px;  
     margin-bottom: 30px;
+    flex: 1;
 }
 
 .service-info {
-    font-size: 20px;
-    line-height: 26px;
-    flex: 1;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    font-size: 18px;
+    line-height: 23.4px;
+    flex: 3;
 }
 
 .services-button {
-    flex: 1;
-    margin-top: 70px;
+    padding-left: 15px;
+    padding-bottom: 6px;
     display: block;
     border: none;
     text-align: left;
@@ -260,7 +262,10 @@ body {
     font-size: 20px;
     text-underline-offset: 10px;
     text-decoration-thickness: 1px;
+    justify-content: end;
 }
+
+/* Buro */
 
 .buro-items {
     display: flex;
