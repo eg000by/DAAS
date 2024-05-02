@@ -7,28 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 
 <body>
     <header class="main-header">
         <div class="header-container">
-        <div class="logo">
-            <img src="../assets/logo.svg" alt="Логотип">
+            <div class="logo">
+                <img src="../assets/logo.svg" alt="Логотип">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Мебель</a></li>
+                    <li><a href="#">О бюро</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <a href="#" class="active">RU</a> / <a href="#" class="eng">ENG</a>
+            </div>
         </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Портфолио</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Мебель</a></li>
-                <li><a href="#">О бюро</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="language-switch">
-            <a href="#" class="active">RU</a> / <a href="#" class="eng">ENG</a>
-        </div>
-    </div>
     </header>
     <div class="slider-container">
         <div class="background-slider">
@@ -37,146 +38,153 @@
             <div class="slide" style="background-image: url('../assets/ribnikovVnutri.png');"></div>
             <div class="slide" style="background-image: url('../assets/up.jpg');"></div>
         </div>
-        <div class="slider-controls-container">
-        <div class="slider-controls">
-            <span class="prev"><img src="/assets/prevArrow.svg" alt="Previous"></span>
-            <span class="next"><img src="/assets/nextArrow.svg" alt="Next"></span>
-        </div>
+            <div class="slider-controls">
+                <span class="prev"><img src="/assets/prevArrow.svg" alt="Previous"></span>
+                <span class="next"><img src="/assets/nextArrow.svg" alt="Next"></span>
+            </div>
     </div>
-</div>
-<div class="content-wrapper">
-    <div class="portfolio">
-        <h1 class="block-name">ПОРТФОЛИО</h1>
-        <div class="portfolio-items">
-            <div class="portfolio-item">
-                <img src="/assets/ribnikov.png" alt="Фотография 1">
-                <h2>рыбников офис <span class="gray-text">120 м²</span></h2>
-                <p class="gilroy-f">С другой стороны, укрепление </p>
-            </div>
-            <div class="portfolio-item">
-                <img src="/assets/michurin.png" alt="Фотография 2">
-                <h2>Мичуринский <span class="gray-text">120 м²</span></h2>
-                <p class="gilroy-f">С другой стороны, укрепление </p>
-            </div>
-            <div class="portfolio-item">
-                <img src="/assets/michurin2.png" alt="Фотография 3">
-                <h2>Мичуринский <span class="gray-text">120 м²</span></h2>
-                <p class="gilroy-f">С другой стороны, укрепление </p>
-            </div>
-        </div>
-        <button class="show-more gilroy-f">Все проекты</button>
-    </div>
-        
-    <div class="video-block">
-        <h1 class="block-name">ЗАГОЛОВОК</h1>
-        <div class="video-items">
-            <div class="video"><img src="/assets/video_player.png" alt="Видео"></div>
-            <div class="video-info gilroy-f">Реконструкция загородного таунхауса. Были выполнены работы 
-                по присоединению части террас 
-                и балконов к жилым помещениям, устройство эксплуатируемой кровли, заглубление и расширение участка 
-                для устройства сада с зоной отдыха.</div>
-        </div>
-    </div>
-
-    <div class="services">
-        <h1 class="block-name">УСЛУГИ</h1>
-        <div class="services-container">
-            <div class="service">
-                <h2>ДИЗАЙН ПРОЕКТ</h2>
-                <p class="gilroy-f service-info">От эскизов на бумаге до последних штрихов в оформлении - наша команда воплощает в реальность ваши мечты о идеальном интерьере</p>
-                <button class="gilroy-f services-button">Подробнее</button>
-            </div>
-            <div class="service">
-                <h2>АРХИТЕКТУРА</h2>
-                <p class="gilroy-f service-info">Мы воплощаем в жизнь архитектурные решения, которые гармонично вписываются в окружающий ландшафт и отвечают всем вашим ожиданиям</p>
-                <button class="services-button gilroy-f">Подробнее</button>
-            </div>
-            <div class="service">
-                <h2>АВТОРСКИЙ НАДЗОР</h2>
-                <p class="gilroy-f service-info">Авторский надзор – это не просто формальность, а ключевой элемент, обеспечивающий строительство объекта в точном соответствии с утвержденным проектом</p>
-                <button class="services-button gilroy-f">Подробнее</button>
-            </div>
-            <div class="service">
-                <h2>ПОДБОР МЕБЕЛИ И ПРЕДМЕТОВ ДЕКОРА</h2>
-                <p class="gilroy-f service-info">Наше бюро уже много лет сотрудничает со множеством европейских фабрик по мебели, освещению, сантехники, текстилю 
-                    и декору.</p>
-                <button class="services-button gilroy-f ">Подробнее</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="buro-block">
-        <h1 class="block-name">О БЮРО</h1>
-        <div class="buro-items">
-            <div class="creators">
-                <div class="creator">
-                    <img src="/assets/Alexei_photo.png" alt="Алексей">
-                    <h2>АЛЕКСЕЙ СЕМЕНЯК</h2>
-                    <p class="gilroy-f">Архитектор</p>
+    <div class="content-wrapper">
+        <div class="article">
+            <h1 class="block-name">ПОРТФОЛИО</h1>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="/assets/ribnikov.png" alt="Фотография 1">
+                    <h2>рыбников офис <span>120 м²</span></h2>
+                    <p class="gilroy-f">С другой стороны, укрепление </p>
                 </div>
-                <div class="creator">
-                    <img src="/assets/Anastasia_photo.png" alt="Анастасия">
-                    <h2>АНАСТАСИЯ ДОЛГИНА</h2>
-                    <p class="gilroy-f">Дизайнер</p>
-                </div>      
-            </div>
-            <div class="buro-info gilroy-f">
-                <div>
-                    Бюро предоставляет полный комплекс услуг по разработке интерьерных и архитектурных проектов в России и за рубежом.
-                    Наши проекты отвечают характеру 
-                    и вкусу, образу жизни и всем необходимым потребностям заказчика.
+                <div class="portfolio-item">
+                    <img src="/assets/michurin.png" alt="Фотография 2">
+                    <h2>Мичуринский <span>120 м²</span></h2>
+                    <p class="gilroy-f">С другой стороны, укрепление </p>
                 </div>
-                <div>
-                    Наши проекты отвечают характеру и вкусу, образу жизни и всем необходимым потребностям заказчика.
-                    Мы акцентируем внимание на диалоге и взаимопонимании, на эстетике и индивидуальности, чтобы каждый проект был не только технически совершенным, но и лично значимым для заказчика.
+                <div class="portfolio-item">
+                    <img src="/assets/michurin2.png" alt="Фотография 3">
+                    <h2>Мичуринский <span>120 м²</span></h2>
+                    <p class="gilroy-f">С другой стороны, укрепление </p>
                 </div>
-                <button class="buro-button gilroy-f ">Подробнее</button>
+            </div>
+            <button class="show-more gilroy-f">Все проекты</button>
+        </div>
+
+        <div class="article">
+            <h1 class="block-name">ЗАГОЛОВОК</h1>
+            <div class="video-items">
+                <div class="video"><img src="/assets/video_player.png" alt="Видео"></div>
+                <div class="video-info gilroy-f">Реконструкция загородного таунхауса. Были выполнены работы
+                    по присоединению части террас
+                    и балконов к жилым помещениям, устройство эксплуатируемой кровли, заглубление и расширение участка
+                    для устройства сада с зоной отдыха.</div>
+            </div>
+        </div>
+
+        <div class="services article">
+            <h1 class="block-name">УСЛУГИ</h1>
+            <div class="services-container">
+                <div class="service">
+                    <h2>ДИЗАЙН ПРОЕКТ</h2>
+                    <p class="gilroy-f service-info">От эскизов на бумаге до последних штрихов в оформлении - наша
+                        команда воплощает в реальность ваши мечты о идеальном интерьере</p>
+                    <button class="gilroy-f services-button">Подробнее</button>
+                </div>
+                <div class="service">
+                    <h2>АРХИТЕКТУРА</h2>
+                    <p class="gilroy-f service-info">Мы воплощаем в жизнь архитектурные решения, которые гармонично
+                        вписываются в окружающий ландшафт и отвечают всем вашим ожиданиям</p>
+                    <button class="services-button gilroy-f">Подробнее</button>
+                </div>
+                <div class="service">
+                    <h2>АВТОРСКИЙ НАДЗОР</h2>
+                    <p class="gilroy-f service-info">Авторский надзор – это не просто формальность, а ключевой элемент,
+                        обеспечивающий строительство объекта в точном соответствии с утвержденным проектом</p>
+                    <button class="services-button gilroy-f">Подробнее</button>
+                </div>
+                <div class="service">
+                    <h2>ПОДБОР МЕБЕЛИ И ПРЕДМЕТОВ ДЕКОРА</h2>
+                    <p class="gilroy-f service-info">Наше бюро уже много лет сотрудничает со множеством европейских
+                        фабрик по мебели, освещению, сантехники, текстилю
+                        и декору.</p>
+                    <button class="services-button gilroy-f ">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="buro-block article">
+            <h1 class="block-name">О БЮРО</h1>
+            <div class="buro-items">
+                <div class="creators">
+                    <div class="creator">
+                        <img src="/assets/Alexei_photo.png" alt="Алексей">
+                        <h2>АЛЕКСЕЙ СЕМЕНЯК</h2>
+                        <p class="gilroy-f">Архитектор</p>
+                    </div>
+                    <div class="creator">
+                        <img src="/assets/Anastasia_photo.png" alt="Анастасия">
+                        <h2>АНАСТАСИЯ ДОЛГИНА</h2>
+                        <p class="gilroy-f">Дизайнер</p>
+                    </div>
+                </div>
+                <div class="buro-info gilroy-f">
+                    <div>
+                        Бюро предоставляет полный комплекс услуг по разработке интерьерных и архитектурных проектов в
+                        России и за рубежом.
+                        Наши проекты отвечают характеру
+                        и вкусу, образу жизни и всем необходимым потребностям заказчика.
+                    </div>
+                    <div>
+                        Наши проекты отвечают характеру и вкусу, образу жизни и всем необходимым потребностям заказчика.
+                        Мы акцентируем внимание на диалоге и взаимопонимании, на эстетике и индивидуальности, чтобы
+                        каждый проект был не только технически совершенным, но и лично значимым для заказчика.
+                    </div>
+                    <button class="buro-button gilroy-f ">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h1 class="block-name furn">МЕБЕЛЬ</h1>
+            <div class="furniture-info">
+                <div class="furniture-1 gilroy-f">
+                    Пользовательский опыт мы упускаем, что элементы политического процесса своевременно верифицированы.
+                    Сложно сказать, почему многие известные личности неоднозначны и будут многие известные личности
+                    неоднозначны и
+                </div>
+                <div class="furniture-2 gilroy-f">
+                    <div>Пользовательский опыт мы упускаем, что элементы политического процесса своевременно
+                        верифицированы. Сложно сказать, почему многие</div>
+                    <button class="buro-button gilroy-f ">Подробнее</button>
+                </div>
+            </div>
+            <div class="furniture-items">
+                <div class="furniture"><img src="/assets/Rectangle 20.png" alt="Мебель"></div>
+                <div class="furniture"><img src="/assets/Rectangle 20.png" alt="Мебель"></div>
+                <div class="furniture"><img src="/assets/Rectangle 20.png" alt="Мебель"></div>
             </div>
         </div>
     </div>
 
-    <div class="furniture-block">
-        <h1 class="block-name furn">МЕБЕЛЬ</h1>
-        <div class="furniture-info">
-            <div class="furniture-1 gilroy-f">
-                Пользовательский опыт мы упускаем, что элементы политического процесса своевременно верифицированы. Сложно сказать, почему многие известные личности неоднозначны и будут  многие известные личности неоднозначны и 
-            </div>
-            <div class="furniture-2 gilroy-f">
-                <div>Пользовательский опыт мы упускаем, что элементы политического процесса своевременно верифицированы. Сложно сказать, почему многие</div>
-                <button class="buro-button gilroy-f ">Подробнее</button>
-            </div>
+    <footer class="main-footer">
+        <div class="footer-logo">
+            <img src="../assets/logo.svg" alt="Логотип">
         </div>
-        <div class="furniture-items">
-            <div class="furniture"><img src="/assets/Rectangle 20.png" alt="Мебель"></div>
-            <div class="furniture"><img src="/assets/Rectangle 20.png" alt="Мебель"></div>
-            <div class="furniture"><img src="/assets/Rectangle 20.png" alt="Мебель"></div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Мебель</a></li>
+                <li><a href="#">бюро</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="#"><img src="/assets/viber.png" alt="Viber"></a>
+            <a href="#"><img src="/assets/tg.png" alt="Tg"></a>
         </div>
-    </div>
-</div>
+    </footer>
 
-<footer class="main-footer">
-    <div class="footer-logo">
-        <img src="../assets/logo.svg" alt="Логотип">
+    <div class="social-links-always show">
+        <a href="#"><img src="/assets/viberDark.png" alt="Viber"></a>
+        <a href="#"><img src="/assets/tgDark.png" alt="Tg"></a>
     </div>
-    <nav class="footer-nav">
-        <ul>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Мебель</a></li>
-            <li><a href="#">бюро</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-    </nav>
-    <div class="social-links">
-        <a href="#"><img src="/assets/viber.png" alt="Viber"></a>
-        <a href="#"><img src="/assets/tg.png" alt="Tg"></a>
-    </div>
-</footer>   
-
-<div class="social-links-always show">
-    <a href="#"><img src="/assets/viberDark.png" alt="Viber"></a>
-    <a href="#"><img src="/assets/tgDark.png" alt="Tg"></a>
-</div>
 
     <script src="../scripts/main.js"></script>
 </body>

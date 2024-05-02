@@ -7,8 +7,6 @@
     }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -22,6 +20,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    color: black;
 }
 
 /* Header */
@@ -101,17 +100,12 @@ body {
     opacity: 1;
 }
 
-.slider-controls-container {
-    max-width: 1520px;
-    width: 100%;
-    align-self: end;
-    margin: 0 200px;
-
-    display: flex;
-    justify-content: flex-end;
-}
-
 .slider-controls {
+    position: absolute;
+    right: 200px;
+    bottom: 0;
+    z-index: 1;
+
     background-color: rgba(255, 255, 255, 0.17);
     backdrop-filter: blur(5px); 
 
@@ -134,26 +128,27 @@ body {
 /* Main-content */
 
 .content-wrapper {
-    margin-left: 99px;
-    margin-right: 80px;
+    max-width: 1520px;
+    margin: 0 auto;
 }
 
-.portfolio {
-    margin-top: 120px;
-    margin-bottom: 120px;
+.article {
+    margin: 100px 0; 
 }
 
 .block-name {
-    margin-bottom: 50px;
-    font-size: 48px;
-    color: black;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 52.02px;
 }
+
+/* Portfolio */
 
 .portfolio-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .portfolio-item {
@@ -164,21 +159,21 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .portfolio-item h2 {
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.gray-text {
+.portfolio-item span {
     color:grey;
 }
 
 .portfolio-item p {
-    font-size: 20px;
+    font-size: 16px;
     color:grey;
 }
 
@@ -195,6 +190,8 @@ body {
     text-decoration-thickness: 1px;
 }
 
+/* Video */
+
 .video-items {
     display: flex;
 }
@@ -204,11 +201,6 @@ body {
     align-self: end;
     line-height: 26px;
     font-size: 20px;
-}
-
-.services {
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .services-container {
@@ -318,10 +310,6 @@ body {
     text-decoration-thickness: 1px;
 }
 
-.furniture-block {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
 
 .furniture-info {
     display: grid;
@@ -344,11 +332,16 @@ body {
 
 .furniture-items {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .furniture {
-    flex: 1;
+    flex: 0 0 33%;
+    max-width: 487px;
+}
+
+.furniture img {
+    width: 100%;
 }
 
 .furn {
@@ -402,7 +395,7 @@ body {
     gap:16px;
     flex-direction: column;
     display: none;
-    z-index: 3; 
+    z-index: 1; 
 }
 
 .social-links-always.show {
