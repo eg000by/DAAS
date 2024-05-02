@@ -238,7 +238,7 @@ body {
 .service h2 {
     font-size: 28px;
     line-height: 40.46px;
-    min-height: 70px;  
+    min-height: 90px;  
     margin-bottom: 30px;
     flex: 1;
 }
@@ -267,22 +267,30 @@ body {
 
 /* Buro */
 
+.buro {
+    font-size: 48px;
+    line-height: 69.36px;
+}
+
 .buro-items {
     display: flex;
     gap:30px;
 }
 
-.creators {
-    display: flex;
-    gap: 30px;
+.creator {
+    flex: 0 0 32%;
 }
 
-.creator img {
-    margin-bottom: 30px;
+.creator-photo {
+    margin-bottom: 15px;
+}
+
+.creator-photo img {
+    width: 100%;
 }
 
 .creator h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 28px;
     line-height: 40.46px;
 }
@@ -293,13 +301,15 @@ body {
 }
 
 .buro-info {
-    line-height: 26px;
-    font-size: 20px;
+    flex: 0 0 32%;
+    line-height: 23.4px;
+    font-size: 18px;
     align-self: end;
+
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 116px;
+    margin-bottom: 100px;
 }
 
 .buro-button {
@@ -315,6 +325,7 @@ body {
     text-decoration-thickness: 1px;
 }
 
+/* Furniture */
 
 .furniture-info {
     display: grid;
