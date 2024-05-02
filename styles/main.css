@@ -37,20 +37,32 @@ body {
 .header-container {
     max-width: 1520px;
     max-height: 77px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-}   
+    gap: 15px;
+}  
+
+.logo {
+    flex: 0 0 25%;
+    max-width: 92px;
+}
 
 .logo img {
-    max-width: 92px;
-    display: block;
+    max-width: 100%;
+}
+
+.main-nav {
+    flex: 1 0 50%;
+    max-width: 572px;
 }
 
 .main-nav ul {
     list-style: none;
+    width: 100%;
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 .main-nav ul li a {
@@ -219,7 +231,7 @@ body {
 }
 
 .service {
-    flex: 0 0 25%;
+    flex: 1 1 25%;
     max-width: 357px;
     height: 331px;
     border-left: 1px solid rgba(196, 196, 196, 1);
@@ -278,7 +290,7 @@ body {
 }
 
 .creator {
-    flex: 0 0 32%;
+    flex: 0 1 32%;
 }
 
 .creator-photo {
@@ -316,6 +328,7 @@ body {
     display: block;
     border: none;
     text-align: left;
+    padding: 0;
     background-color: transparent;
     text-decoration: underline;
     text-decoration-color: rgba(39, 39, 39, 1);
@@ -327,68 +340,86 @@ body {
 
 /* Furniture */
 
+.furn {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
 .furniture-info {
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    gap: 60px;
-    margin-bottom: 50px;
-    line-height: 26px;
-    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    line-height: 23.4px;
+    font-size: 18px;
 }
 
 .furniture-1 {
-    width: 700px;
+    flex: 0 0 33%;
 }
 
 .furniture-2 {
+    margin-left: 31%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
 }
 
 .furniture-items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .furniture {
-    flex: 0 0 33%;
+    flex: 0 0 calc(33.333% - 19px);
     max-width: 487px;
 }
 
 .furniture img {
-    width: 100%;
+    max-width: 100%;
 }
 
-.furn {
-    margin-bottom: 30px;
-}
+/* Footer */
 
 .main-footer {
+    width: 100%;
+    padding: 100px 100px 100px 100px;
+    background-color: black;
+}
+
+.footer-container {
+    max-width: 1350px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 100px 80px 100px 100px;
-    background-color: black;
+    gap: 15px;
 }
-.footer-nav {
-    display: flex;
+
+.footer-logo {
+    flex:0 0 30%;
+    max-width: 116px;
 }
 
 .footer-logo img{
-    width: 116px;
+    width: 100%;
+}
+
+.footer-nav {
+    flex: 1 0 70%;
+    max-width: 917px;
+    margin-right: 30px;
 }
 
 .footer-nav ul{
-    margin-left: 70px;
-    list-style-type: none;
+    list-style: none;
+    width: 100%;
     display: flex;
-    gap: 65px;
+    justify-content: space-between;
 }
 
 .footer-nav ul li {
-    margin-right: 20px;
 }
 
 .footer-nav ul li a {

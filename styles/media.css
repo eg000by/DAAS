@@ -1,0 +1,28 @@
+@media (max-width: 1430px) {
+    .service h2 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+    .service-info {
+        font-size: 16px;
+        line-height: 20px;
+        flex: 2;
+    }
+    .buro-info {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .service h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .service-info {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .buro-info {
+        font-size: 14px;
+    }
+}
