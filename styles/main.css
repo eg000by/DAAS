@@ -10,80 +10,77 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
 }
 
 .gilroy-f {
     font-family: 'Gilroy Light';  
     font-weight: 300;
 }
+
+body {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Header */
+
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    padding: 26px 200px 0 200px;
     color: #fff;
-    position: absolute;
     width: 100%;
+    position: absolute;
+    top: 0;
     z-index: 1;
 }
 
-.logo {
-    position: relative;
-    left: 83px;
-    top: 6px;
-}
+.header-container {
+    max-width: 1520px;
+    max-height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
 
 .logo img {
-    width: 92px;
-}
-
-.main-nav {
-    position: relative;
-    left: 40px;
-    top: 3px;
+    max-width: 92px;
+    display: block;
 }
 
 .main-nav ul {
     list-style: none;
     display: flex;
-}
-
-.main-nav ul li {
-    margin-right: 50px; 
+    gap: 50px;
 }
 
 .main-nav ul li a {
     color: #fff; 
     text-decoration: none;
-    font-weight: 400;
+
     font-size: 16px;
     letter-spacing: 0.02em;
+    line-height: 23.12px;
+    text-transform: uppercase;
 }
 
 .language-switch {
     font-size: 14px;
-    position: relative;
-    font-weight: 400;
-    right: 53px;
-    top: 2px;
+    line-height: 20.23px;
 }
 .language-switch a {
-    color: #fff; 
+    color:grey; 
     text-decoration: none; 
 }
-
-.slider-container {
-    position: relative;
-    height: calc(100vh - 20px); /* тут рixel perfect*/
-    /* height: 100vh; */ /* тут реальная вся высота*/
-    width: 100%;
+.language-switch a.active {
+    color: #fff; 
 }
 
-.background-slider {
+/*  Slider */
+
+.slider-container {
+    height: 100vh;
+    width: 100%;
 }
 
 .slide {
